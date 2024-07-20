@@ -21,7 +21,7 @@ public class Task {
         return id;
     }
 
-    void setId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -29,7 +29,7 @@ public class Task {
         return description;
     }
 
-    void setDescription(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
@@ -37,7 +37,16 @@ public class Task {
         return done;
     }
 
-    void setDone(boolean done) {
+    public void setDone(boolean done) {
         this.done = done;
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", done=" + done +
+                '}';
     }
 }
